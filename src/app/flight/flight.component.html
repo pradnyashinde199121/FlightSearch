@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="search_main_wrap">
+    <div class="form_wrap">
+        <form action="#" #abs="ngForm" (ngSubmit)="abs.valid && searchFlight()">
+            <div>
+                    <div class="form-group"  >
+                      <label for="" class="lable-color">Departure:</label>
+                      <select name="approver" id=""  class="form-control"  [(ngModel)]="serachData.Departure" #_departure="ngModel" required>
+                             <option [ngValue]="d.code" *ngFor="let d of airportData">{{d.airport}}</option>
+                      </select>  
+                      <small class="ml-4 text-danger" *ngIf="abs.submitted && _departure.errors?.['required'] "> required</small>
+                   </div>
+                   <div class="form-group"  >
+                    <label for="" class="lable-color">Destination:</label>
+                    <select name="approver" id=""  class="form-control"  [(ngModel)]="serachData.destination" #_destination="ngModel" required>
+                           <option [ngValue]="d.code" *ngFor="let d of airportData">{{d.airport}}</option>
+                    </select>  
+                    <small class="ml-4 text-danger" *ngIf="abs.submitted && _destination.errors?.['required'] "> required</small>
+                 </div>
+            </div>
+            <div class="datepicker_wrap">
+                <div class="right_section myFlex">
+                  <mat-form-field  appearance="fill">
+                    <input matInput  [max]="maxDate"  name ="sdate" [matDatepicker]="picker"  #es="ngModel" [(ngModel)]="sdate" required placeholder="Depart Date" >
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field> 
+                  <p><small class="ml-4 text-danger" *ngIf="abs.submitted && es.errors?.['required'] ">start date is required</small></p>
+                </div>
+                
+                <div class="left_section myFlex">
+                  <mat-form-field  appearance="fill">
+                    <input matInput [min]="sdate" [max]="maxDate"  name="edate" [matDatepicker]="picker1"  #ss="ngModel" [(ngModel)]="edate"  required placeholder="Derturn Date">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+                  <p>
+                  <small class="ml-4 text-danger" *ngIf="abs.submitted && ss.errors?.['required'] "> end date is required</small></p>
+                </div>
+              </div>
+              <div class="trsvel_class_wrap">
+                <div class="form-group"  >
+                    <label for="" class="lable-color">Travelers:</label>
+                    <select name="traveler" id=""  class="form-control"  [(ngModel)]="serachData.traveler" #_traveler="ngModel" required>
+                           <option [value]="d.type" *ngFor="let d of travellerData">{{d.type}}</option>
+                    </select>  
+                    <small class="ml-4 text-danger" *ngIf="abs.submitted && _traveler.errors?.['required'] "> required</small>
+                 </div>
+                 <div class="form-group"  >
+                    <label for="" class="lable-color">Class:</label>
+                    <select name="approver" id=""  class="form-control"  [(ngModel)]="serachData.class" #_class="ngModel" required>
+                           <option [value]="d.class" *ngFor="let d of classData">{{d.class}}</option>
+                    </select>  
+                    <small class="ml-4 text-danger" *ngIf="abs.submitted && _class.errors?.['required'] "> required</small>
+                 </div>
+              </div>
+        
+        
+          <div>
+            <button type="submit" class="btn  search_btn" >Search Flights</button>
+          </div>
+          
+        </form>
+    </div>
+</div>
+
+

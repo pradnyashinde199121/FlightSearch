@@ -1,0 +1,25 @@
+<div class="filterBy_wrap">
+    <div class="header">
+      <h2>Filter By</h2>
+    </div>
+    <div class="rage_hearder_wrap"> 
+        Price Range
+    </div>
+  <div class="range_wrap">
+    <div class="range_value">Min Price:{{value}}</div>
+    <div class="range_value">Max Price:{{maxvalue}}</div>
+    <ngx-slider [(value)]="value" [(highValue)]="maxvalue" [options]="options"></ngx-slider> 
+  </div>
+  <div class="class_header_wrap">Booking Class</div>
+  <div class="class_detail_wrap">
+    <ul>
+        <li>Economy(100) <span style="float:right ;">$140</span></li>
+        <li>FirstClass(87) <span style="float:right ;">$130</span></li>
+    </ul>
+  </div>
+  <div class="empty_wrap"></div>
+  <div class="reset_apply_wrap"> 
+    <button class="reset_btn custom_btnbtn">Reset</button>
+    <button class="apply_btn custom_btnbtn">Apply</button>
+  </div>
+  </div>

@@ -1,0 +1,86 @@
+/*---------- filterBy_wrap css ---------*/
+.filterBy_wrap{
+    background: rgb(231, 229, 229);
+}
+.filterBy_wrap .header{
+    background-color: rgba(3,117,188,1);
+    padding: 2%;
+    color: #fff;
+
+}
+.filterBy_wrap .header h2{
+    text-align: center;
+    margin: 0 auto;
+    padding: 2% 0%;
+}
+.rage_hearder_wrap,.class_header_wrap{
+    padding: 3%;
+    background: #fff;
+    margin-top: 2%;
+    text-align: center;
+}
+.range_wrap{
+    text-align: center;
+    margin:1% 0% 4% 0%;
+    background: #fff;
+    padding: 3% 0%;
+}
+.range_wrap .range_value{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+    border: 1px solid  rgb(153, 148, 148);
+    margin: 2%;
+    border-radius: 4px;
+   
+}
+.class_detail_wrap{
+    margin-top: 2%;
+    background: #fff;
+}
+.class_detail_wrap ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 2%;
+}
+.custom_btnbtn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin: 2%;
+}
+.reset_apply_wrap{
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.empty_wrap{
+    padding: 4% 0%;
+    margin-top: 1%;
+    background: #fff;
+}
+.ngx-slider .ngx-slider-pointer {
+    cursor: pointer;
+    width: 14px !important;
+    height: 14px !important;
+    top: -5px;
+    background-color: #0db9f0;
+    z-index: 3;
+    border-radius: 16px;
+}
+.ngx-slider .ngx-slider-pointer:after {
+    display: none !important;
+}

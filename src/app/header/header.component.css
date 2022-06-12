@@ -1,0 +1,43 @@
+.main_header_wrap{
+    background-color: rgba(3,117,188,1);
+}
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.logo_wrap img{
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+}
+.side_menu_wrap{
+    float: left;
+    position: absolute;
+    top: 4vw;
+    font-size: 6vw;
+    left: 4vw;
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .logo_wrap img{
+
+        width: 48%;}
+      
+}
+
+@media screen and (min-width: 992px) {
+    .side_menu_wrap{
+        float: left;
+        position: relative;
+        margin: -2.8% 2%;
+        font-size: 3vw;
+        color: #fff;
+    }
+      
+}

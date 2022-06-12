@@ -1,0 +1,14 @@
+[
+    {"FlightId":1,"AirlineName":"Indian Airlines",
+        "DepartureDetails":{"DeptLocation":"Pune","DeptCode":"PUN","AirportName":"Pune International Airport","DeptDate":"12-06-2022","DeptTime":"2:30AM"},
+        "ArrivalDetails":{"ArrvLocation":"New York","ArrvCode":"NYC","AirportName":"NYC International Airport","ArrvDate":"13-06-2022","ArrvTime":"2:30PM"},
+        "FlightType":"NonStop","FlightDuration":"24h 20m",
+        "PriceDetails":[{"Class":"economy","Price":"$123","SeatsAvailable":"3"},{"Class":"MainCabin","Price":"$123","SeatsAvailable":"10"},{"Class":"VIP","Price":"$123","SeatsAvailable":"5"}]
+    },
+    {"FlightId":2,"AirlineName":"British Airlines",
+        "DepartureDetails":{"DeptLocation":"New York","DeptCode":"NYC","AirportName":"NYC International Airport","DeptDate":"15-06-2022","DeptTime":"2:30AM"},
+        "ArrivalDetails":{"ArrvLocation":"Pune","ArrvCode":"PUN","AirportName":"Pune International Airport","ArrvDate":"16-06-2022","ArrvTime":"2:30PM"},
+        "FlightType":"1 Stop","FlightDuration":"22h 10m",
+        "PriceDetails":[{"Class":"Economy","Price":"$100","SeatsAvailable":"2"},{"Class":"Business","Price":"$200","SeatsAvailable":"6"},{"Class":"VIP","Price":"$300","SeatsAvailable":"8"}]
+    }  
+]

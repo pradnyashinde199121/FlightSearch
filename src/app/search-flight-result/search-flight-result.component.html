@@ -1,0 +1,37 @@
+<div class="search_flight_result_main_wrap">
+    <div class="header">
+        <h3>{{deptCode}} <i class="fa fa-arrow-right" aria-hidden="true"></i>{{arrivalCode}}</h3>
+    </div>
+    <div class="first_section" *ngFor="let d of fightSearchData">
+        <p class="title"> <i class="fa fa-plane"></i>{{d.AirlineName}}</p>
+        <ul>
+            <li>
+                <p>{{d.DepartureDetails.DeptTime}}</p>
+                <p>{{d.DepartureDetails.DeptCode}}</p>
+            </li>
+            <li>
+                <p>{{d.FlightDuration}}</p>
+                <hr>
+                <p>{{d.FlightType}}</p>
+            </li>
+            <li>
+                <p>{{d.ArrivalDetails.ArrvTime}}</p>
+                <p>{{d.ArrivalDetails.ArrvCode}}</p>
+            </li>
+        </ul>
+        <div class="second_section" >
+            <ul >
+                <li *ngFor="let p of d.PriceDetails">
+                    <p>{{p.Price}}</p>
+                    <p>{{p.Class}}</p>
+                </li>
+            </ul>
+    
+        </div>
+    </div>
+
+    <div class="main_btn_wrap">
+        <div class="sort_btn btn"> <button  routerLink="/sort-by">SortBy</button></div>
+        <div class="filter_btn btn"> <button   routerLink="/filter-by">FilterBy</button></div>
+    </div>
+</div>

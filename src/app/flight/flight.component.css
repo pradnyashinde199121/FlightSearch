@@ -1,0 +1,36 @@
+.search_btn{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.datepicker_wrap .myFlex{
+    /* flex: 1; */
+    text-align: center;
+    margin: 1%;
+}
+.form_wrap{
+    padding: 2% 4%;
+}
+ul li{
+    list-style: none;
+}
+.done_btn{
+    width: 40%;
+}
+@media screen and (min-width: 992px) {
+  .search_main_wrap .form_wrap{
+    max-width: 44%;
+    margin: 0 auto;
+
+  }
+  .datepicker_wrap .myFlex{
+    display: inline-block;
+  }
+  .sub_header_wrap{
+    padding: 2% 0%;
+  }
+}

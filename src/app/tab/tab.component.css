@@ -1,0 +1,74 @@
+
+.menu_container {
+    display: flex;
+}
+.menu_container div{
+    list-style: none;
+    flex: 1;
+    color: rgb(153, 148, 148);
+    text-align: center;
+    cursor: pointer;
+   
+    margin: 2px;
+}
+.menu_container div span{
+    border-bottom: 2px solid  rgb(153, 148, 148);
+}
+.sub_header_wrap{
+    padding: 4% 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .sub_header_wrap .menu_container div{
+        font-size: 1.6vw;
+    }
+    .sub_header_wrap{
+        padding: 2% 0%;
+        font-size: 1.6vw;
+      }
+   
+}

@@ -1,0 +1,9 @@
+[{"id":1,"value":"Price(Lowest to Heighest)"},
+    {"id":2,"value":"Price(Heighest to Lowest)"},
+    {"id":3,"value":"Duration(Shortest to Longest)"},
+    {"id":4,"value":"Duration(Longest to Shortest)"},
+    {"id":5,"value":"Departure(Earlist to Latest"},
+    {"id":6,"value":"Arrival(Earlist to Latest"},
+    {"id":7,"value":"Airline(A to Z)"},
+    {"id":8,"value":"Airline(Z to A)"}
+]
